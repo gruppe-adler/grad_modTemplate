@@ -7,23 +7,23 @@ if exist a3 (
 mklink /j a3 include\a3
 
 mkdir x
-mkdir x\grad_modTemplate
-if exist x\grad_modTemplate\addons (
-  rmdir x\grad_modTemplate\addons
+mkdir x\rnt
+if exist x\rnt\addons (
+  rmdir x\rnt\addons
 )
-mklink /j x\grad_modTemplate\addons addons
+mklink /j x\rnt\addons addons
 
 IF [%1] == [] (
-  hemtt build --force --release
+  tools\hemtt build --force --release
 ) ELSE (
-  hemtt build %1
+  tools\hemtt build %1
 )
 
 set BUILD_STATUS=%errorlevel%
 
 rmdir a3
-rmdir x\grad_modTemplate\addons
-rmdir x\grad_modTemplate
+rmdir x\rnt\addons
+rmdir x\rnt
 rmdir x
 
 if %BUILD_STATUS% neq 0 (
