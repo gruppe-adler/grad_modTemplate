@@ -8,7 +8,7 @@ You need to change the addon name in the following files:
 - addons\main\\$PBOPREFIX$
 
 
-For building your mod use the build-hemtt.bat, either by double clicking it or by using a bash and tipping into it 'start build-hemtt.bat'.
+For building your mod use the build-hemtt.bat, either by double clicking it or by using a bash and typing into it 'start build-hemtt.bat'.
 
 For Logos, use the Website built from DerZade:
 https://forum.gruppe-adler.de/topic/2833/mod-marketing-generator-mod-marketing-gruppe-adler-de
